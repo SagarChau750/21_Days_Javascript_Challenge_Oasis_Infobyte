@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 25rem;
+    margin: 0 auto;
+    border: 3px solid rebeccapurple;
+    border-radius: 20px;
+    background-color: rgb(245, 223, 197);
+    padding: 20px;
+}
+.output{
+    margin-top: 1rem;
+    display: flex;
+    background-color: rgb(165, 162, 162);
+    width: 20rem;
+    height: 3rem;
+    border-radius: 20px;
+    padding: 10px;
+    position: relative;
+    
+}
+.password-output{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.copy{
+    position: absolute;
+    text-align: center;
+    padding:5px;
+    right: 7px;
+    cursor: pointer;
+}
+.copy:hover{
+    color:#4d4a4a;
+}
+.slider{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+#slider{
+    width: 17rem;
+    height: 2rem;
+    background: linear-gradient(to right, red, green); /* Customize the track color */
+
+    height: 1rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+
+}
+
+#sliderValue{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.checkbox{
+    text-align: left;
+    margin: 20px 0;    
+}
+.box{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 25px;
+    padding: 7px;
+    margin-bottom: 10px;
+
+}
+#uppercase, #lowercase, #numbers,#symbols{
+    cursor: pointer;
+}
+.button{
+    background-color: #0074d9;
+    color:#ffffff;
+    padding:10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 14rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.button:hover{
+    background-color: #0056b3;
+}
+@media (max-width: 767px) {
+    .wrapper {
+        width: 100%; /* Adjust the width as needed */
+        margin: 0 auto;
+    }
+    .output {
+        text-align: center;
+    }
+    .button {
+        text-align: center;
+        width: 90%;
+    }
+}

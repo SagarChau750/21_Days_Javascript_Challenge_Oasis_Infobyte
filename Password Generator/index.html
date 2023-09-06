@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/2ba05cb360.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Password Generator</h1>
+        <div class="output">
+            <div class="password-output"></div>
+            <i class="fa fa-clone copy"></i>
+
+        </div>
+        <div class="slider">
+            <input type="range" min="1" max="20" value="4" id="slider"> 
+            <span id="sliderValue">4</span>
+        </div>
+        <div class="checkbox">
+            <div class="box">
+                <input type="checkbox" id="uppercase" name="uppercase" >
+                <label for="uppercase">Includes Uppercase</label>
+            </div>
+            <div class="box">
+                <input type="checkbox" id="lowercase" name="lowercase">
+                <label for="lowercase">Includes Lowercase</label>
+            </div>
+            <div class="box">
+                <input type="checkbox" id="symbols" name="symbols">
+                <label for="symbols">Includes Symbols</label>
+            </div>
+            <div class="box">
+                <input type="checkbox" id="numbers" name="numbers">
+                <label for="numbers">Includes Numbers</label>
+            </div>
+        </div>
+        <div class="button">Generate Password</div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
